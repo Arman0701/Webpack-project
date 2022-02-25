@@ -1,3 +1,4 @@
+import "./style.css";
 let myNodelist = document.getElementsByTagName("LI");
 for (let i = 0; i < myNodelist.length; i++) {
     let span = document.createElement("SPAN");
@@ -16,15 +17,14 @@ for (let i = 0; i < close.length; i++) {
 
 let list = document.querySelector("ul");
 list.addEventListener("click", function (ev) {
-        if (ev.target.tagName === "LI") {
-            ev.target.classList.toggle("checked");
-        }
+    if (ev.target.tagName === "LI") {
+        ev.target.classList.toggle("checked");
     }
-);
+});
 
 const addInput = document.getElementById("myInput");
-addInput.addEventListener('keydown', (event) => {
-    if (event.key === 'Enter') newElement();
+addInput.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") newElement();
 });
 
 function newElement() {
@@ -45,7 +45,7 @@ function newElement() {
     span.appendChild(txt);
     li.appendChild(span);
 
-    for (i = 0; i < close.length; i++) {
+    for (let i = 0; i < close.length; i++) {
         close[i].onclick = function () {
             this.parentElement.style.display = "none";
         };
