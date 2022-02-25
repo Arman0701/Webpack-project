@@ -1,4 +1,4 @@
-import "./style.css";
+import './style.css';
 let myNodelist = document.getElementsByTagName("LI");
 for (let i = 0; i < myNodelist.length; i++) {
     let span = document.createElement("SPAN");

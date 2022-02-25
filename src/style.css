@@ -3,7 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    background: url('./static/images/bg.jpg');
+    background-size: cover;
+}
 .container {
     margin: 0 auto;
     width: 60%;
